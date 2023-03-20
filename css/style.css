@@ -25,6 +25,23 @@ body {
     box-sizing: border-box;
 }
 
+.header {
+    width: 90%;
+    z-index: 10;
+    display: flex;
+}
+
+#title-header {
+    display: flex;
+    width: 100%;
+    /****justify-content: space-between***/
+}
+
+.top {
+    padding-right: 30px;
+    padding-left: 780px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
