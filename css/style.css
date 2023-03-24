@@ -1,179 +1,501 @@
-/****** General ***********/
+/****** General ***********/ /***code de OC  **/
 * {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
 }
 
 .fa-solid {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+  /***Code de base de OC***/
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
-
-.header {
-    width: 90%;
-    z-index: 10;
-    display: flex;
-}
-
+/**Fin code OC**/
 #title-header {
-    display: flex;
-    width: 100%;
-    /****justify-content: space-between***/
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.top {
-    padding-right: 30px;
-    padding-left: 780px;
+#logo-booki {
+  height: 25px; /***réduit taille du logo car trop grand***/
+  order: 0; /***La propriété CSS order permet de spécifier l'ordre d'affichage visuel d'un élément flexible***/
+  margin-right: 70%;
+  align-self: flex-end;
+  /***padding-left: 5%;***/
 }
 
+#border-topi {
+  border-top: 3px solid;
+  color: #0065fc;
+  order: 1;
+  text-align: right;
+  padding-top: 1%;
+}
+
+#black {
+  order: 2;
+  color: black;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.border-top {
+  text-align: right;
+  padding-top: 1%;
+}
+
+.border-top :hover {
+  /****de l63 a l 72 pas à faire à verifier***/
+  border: white;
+  border-top: 3px solid;
+  color: #0065fc;
+}
+
+header nav a {
+  color: #0065fc;
+  text-decoration: none; /*supprime les traits en dessous*/
+}
+
+/*1ére section*/
+#trouvez {
+  margin-bottom: 5px;
+}
+
+.centre {
+  margin-top: 0;
+}
+
+/* logo gps*/
+
+.fas.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  padding: 1rem 1.25rem;
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+}
+.searchForm {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+.input-search {
+  border-right: none;
+  border-left: none;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+  padding: 0 1.25rem; /*Deplace Marseille au centre*/
+  box-sizing: border-box; /*Deplace rechercher vers la gauche*/
+  width: 14rem; /*longueur border radius*/
+  font-size: 1rem;
+  font-weight: bold;
+}
+.input-search::placeholder {
+  font-size: 1rem;
+  color: black;
+}
+.button-search {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+.fas.fa-search {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+/*search filters*/
+.searchFilters {
+  display: flex;
+  align-items: center; /*Aligne tout*/
+  max-width: 100%;
+  margin-top: 2%; /*espace avec Marseille*/
+}
+
+
+
+.fasfa {
+  display: flex;
+  align-items: center;
+}
+
+.fas.fa-money-bill-wave,
+.fas.fa-child,
+.fas.fa-heart,
+.fa-sharp.fa-solid.fa-fire {
+  display: flex;
+  align-items: center;
+  color: #0065fc;
+  cursor: pointer;
+  justify-content: center; /*centre logo money*/
+  position: relative;
+  left: 59px; /*Permet d'inserer le logo dans economique*/
+  width: 40px; /*De width à border radius pour faire un cercle*/
+  height: 54px;
+}
+
+.eco,
+.familial,
+.romantique,
+.pepites {
+  display: inline-flex; /*Déplace le mot economique au centre */
+  max-width: 100%;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 30px;
+  border: #f2f2f2 0.2rem solid;
+  padding-left: 59px; /*marge à l'interieur des border-radius*/
+  height: 49px;
+  font-size: 1.1rem; /*epaisseur caractere*/
+  font-weight: bold; /*graisse utilisée pour le texte*/
+}
+
+.eco:hover,
+.familial:hover,
+.romantique:hover,
+.pepites:hover:hover {
+  background-color: #a7c6f3;
+  border: #deebff 0.2rem solid;
+}
+
+.eco {
+  width: 8rem; /*longueur border-radius*/
+}
+.familial {
+  width: 6rem;
+}
+.romantique {
+  width: 8rem;
+}
+.pepites {
+  width: 9rem;
+}
+
+/*info*/
+.fas.fa-info {
+  color: #0065fc;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-bottom: #f2f2f2 0.3rem solid;
+  border-top: #f2f2f2 0.3rem solid;
+  border-left: #f2f2f2 0.3rem solid;
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem; /*De min-height à min-width fait un cercle*/
+  min-width: 2rem;
+  border: solid 1px #d9d9d9; /*Contour du cercle*/
+  border-radius: 100%; /*Pour faire le cercle*/
+  margin: 0;
+  height: 2rem;
+}
+
+.nombre {
+  display: inline-flex;
+  margin-left: 0.5%;
+}
+
+/*Deuxiéme section*/
+/* Trois premiéres images horizontales*/
+
+.hosting-img {
+  border-radius: 30px 30px 0 0;
+  cursor: pointer;
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 100px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 10%;
+}
+
+/*Code fourni par OC = aside*/
 .section-title {
-    margin: 0;
-    font-size: 22px;
+  margin: 0;
+  font-size: 22px;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .card-title {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .euro {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .neutralStar {
-    color: var(--main-bg-color)
+  color: var(--main-bg-color);
 }
 
-/****** Hebergements And Populaires ***********/
+/****** Hebergements And Populaires ***********/ /**Fourni par OC**/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+  /**Fourni par OC***/
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hebergements ***********/ /**Fourni par OC***/
 .hebergements {
-    width: 65%;
+  width: 65%;
+}
+
+/*Deuxiéme section*/
+/* Trois premiéres images horizontales*/
+
+.marseille-hosting {
+  margin: 0;
+  padding: 20px;
+}
+.row-location {
+  display: flex;
+  flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
+  margin: auto;
+  align-items: flex-start; /*positionne en haut du container*/
+  justify-content: space-evenly; /*Espacement identique*/
+}
+.hosting {
+  width: 29%;
+  margin: 1%;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  background: white;
+  padding: 1%;
+}
+.hosting-img {
+  border-radius: 30px 30px 0 0;
+  cursor: pointer;
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 100px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+}
+.tarif1 {
+  line-height: 2em;
+  margin: 0;
+}
+.fas.fas.fa-star1 {
+  color: #0065fc;
+}
+.fas.fas.fa-star1[data-active="false"] {
+  color: #d7dbdf;
+}
+.ancre {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+.more {
+  font-size: 1.2em;
+  margin: auto;
+  margin: 0;
+  padding: 20px;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+  width: 32%;
 }
 
 .populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+  display: flex;
+  margin-top: 33px;
 }
 
 .populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+  margin: 0;
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+/*Fin copde fourni par OC*/
+
+/*Quatriéme section et derniére section, activites Marseille*/
+/* Les quatre images horizontales sont de même taille*/
+#activites-marseille {
+  margin: 0;
+  padding: 20px;
 }
 
+.activity {
+  /**Englobe tout le bloc avec les 4 images **/
+  display: flex;
+  justify-content: space-between; /*Espacement identique*/
+  padding-bottom: 3px;
+  width: 100%;
+  align-items: stretch;
+}
 
+.bloc {
+  width: 25%;
+}
 
+.port-pomegues-calanques-garde {
+  width: 90%;
+  margin: 5%;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  padding-bottom: 1%;
+}
 
+.les-quatre-img-activités-Marseille {
+  border-radius: 30px 30px 0 0;
+  cursor: pointer;
+  height: 470px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+}
+
+.title {
+  padding-left: 5%;
+}
+
+/***FOOTER***/
+.footer {
+  display: flex;
+  margin-top: 4%;
+  background-color: #f2f2f2;
+}
+
+.contenu-footer {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc-footer-info {
+  display: block;
+  height: fit-content; /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
+  width: 26%;
+  margin: 0;
+  padding: 7px 70px 7px 20px;
+}
+
+.ancrebis2 {
+  color: black;
+  text-decoration: none;
+  line-height: 1.9;
+  display: block;
+}
+/***Fin footer***/
+
+/*Code fourni par OC*/
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
 
-    .hebergements {
-        width: 100%;
-    }
+  .hebergements {
+    width: 100%;
+  }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .populaires-cards .card {
-        width: 30%;
-    }
+  .populaires-cards .card {
+    width: 30%;
+  }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
-}
+  /* ... */
+} /*fin code fourni par OC*/
