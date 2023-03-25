@@ -299,12 +299,12 @@ header nav a {
 }
 .hosting {
   width: 29%;
-  margin-top: 33px;
-  cursor: pointer;
-  border-radius: 30px;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  background: white;
-  padding: 1%;
+    margin-top: 33px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #aaaaaa;
+    background: white;
+    padding: 5px;
   
 }
 .hosting-img {
