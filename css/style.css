@@ -294,7 +294,7 @@ header nav a {
   flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
   margin: auto;
   align-items: flex-start; /*positionne en haut du container*/
-  justify-content: space-between; 
+  justify-content: space-between; /*espace*/
   
 }
 .hosting {
