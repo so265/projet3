@@ -417,7 +417,7 @@ header nav a {
   cursor: pointer;
   border-radius: 30px;
   background: white;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   padding-bottom: 1%;
 }
 
@@ -427,7 +427,7 @@ header nav a {
   height: 470px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  
 }
 
 .title {
