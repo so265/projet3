@@ -597,6 +597,9 @@ width: 9rem;
   
 }
 
+#white-hebergement {
+  background-color: white;
+}
 .populaire {     
   display: flex;
   flex-direction: column;
