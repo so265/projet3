@@ -654,12 +654,12 @@ width: 9rem;
   height: 280px;
   width: 100%;
 }
+/***Footer***/
+
+
 
 .contenu-footer {
-  display: block;
-  /* width: auto; */
-  margin-left: 30px
-  
+ margin-left: 32px
 }
 
 .bloc-footer-info {
