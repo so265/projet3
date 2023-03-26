@@ -160,9 +160,7 @@ justify-content: flex-start;}
   cursor: pointer;
   justify-content: center; /*centre logo money*/
   position: relative;
-  left: 59px; /*Permet d'inserer le logo dans economique*/
-  width: 40px; /*De width à border radius pour faire un cercle*/
-  height: 54px;
+  left: 50px; /*Permet d'inserer le logo dans economique*/
 }
 
 .eco,
@@ -200,7 +198,7 @@ justify-content: flex-start;}
   width: 8rem;
 }
 .pepites {
-  width: 9rem;
+  width: 10rem;
 }
 
 /*info*/
@@ -514,7 +512,7 @@ justify-content: flex-start;}
   }
 
   .fasfa {
-    width: 25%;
+    width: 24%;
     margin-left: -45px;
     padding-right: 50px;
  
