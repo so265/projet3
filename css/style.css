@@ -488,9 +488,7 @@ header nav a {
     font-size: 13px;
   }
 /***Fin code OC***/
-  .les-quatre-img-activités-Marseille {
-    height: 200px;
-  }
+  
 
   .searchFilters {
     flex-wrap: wrap;
@@ -500,8 +498,13 @@ header nav a {
     width: 90%; /*100% plutot*/
   }
 
+  
   .fasfa {
     width: 25%;
+  }
+
+  .les-quatre-img-activités-Marseille {
+    height: 200px;
   }
  
 }
