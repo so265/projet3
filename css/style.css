@@ -185,8 +185,9 @@ justify-content: flex-start;}
 .familial:hover,
 .romantique:hover,
 .pepites:hover:hover {
-  background-color: #a7c6f3;
-  border: #deebff 0.2rem solid;
+  background-color: #deebff;
+ /* border: #deebff 0.2rem solid;*/
+ border: 2px solid #d9d9d9;
 }
 
 .eco {
@@ -535,3 +536,53 @@ justify-content: flex-start;}
 } /*fin code fourni par OC*/
 
 
+/*@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0%;
+  }
+  #title-header {
+    flex-wrap: wrap;
+  }
+  #logo-booki {
+    margin-right: auto;
+    order: 0;
+  }
+  #border-topi {
+    order: 2;
+    border-top: none;
+    border-bottom: 5px solid #0065fc;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  #black {
+    order: 3;
+    width: 50%;
+    text-align: center;
+  }
+  #order {
+    order: 1;
+    width: 50%;
+    text-align: right;
+    padding-top: 3%;
+  }
+  .button-search {
+    display: none;
+  }
+  .fas.fa-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filtres {
+    width: 90%;
+  }
+  #black {
+    border-top: none;
+  }
+  .border-top:hover {
+    border-top: none;
+  }
+}*/
