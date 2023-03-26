@@ -143,6 +143,7 @@ header nav a {
 
 #margin-fasfa {
   display: flex;
+  justify-content: flex-start;
 }
 
 .fasfa {
@@ -495,7 +496,7 @@ header nav a {
   }
   
   .filtres {
-    width: 90%; /*100% plutot*/
+    width: 100%; /*100% plutot*/
   }
 
   
