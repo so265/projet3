@@ -533,6 +533,56 @@ justify-content: flex-start;}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
+
+  .header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0%;
+  }
+  #title-header {
+    flex-wrap: wrap;
+  }
+  #logo-booki {
+    margin-right: auto;
+    order: 0;
+  }
+  #border-topi {
+    order: 2;
+    border-top: none;
+    border-bottom: 5px solid #0065fc;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  #black {
+    order: 3;
+    width: 50%;
+    text-align: center;
+  }
+  #order {
+    order: 1;
+    width: 50%;
+    text-align: right;
+    padding-top: 3%;
+  }
+  .button-search {
+    display: none;
+  }
+  .fas.fa-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filtres {
+    width: 90%;
+  }
+  #black {
+    border-top: none;
+  }
+  .border-top:hover {
+    border-top: none;
+  }
+
 } /*fin code fourni par OC*/
 
 
