@@ -500,8 +500,25 @@ header nav a {
 
   
   .fasfa {
-    width: 25%;
+    width: 20%;
   }
+
+  .ok {
+   
+    align-items: flex-start;
+    padding: 0px;
+    left: 13px;
+    right: 0px;
+    position: absolute;
+    margin-top: 110px;
+
+  }
+
+  #info-people {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
 
   .les-quatre-img-activités-Marseille {
     height: 200px;
