@@ -272,9 +272,9 @@ justify-content: flex-start;}
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/ /**Fourni par OC***/
-.hebergements {
-  width: 65%;
+/****** Hebergements ***********/ 
+.hebergements {   /**Fourni par OC***/
+  width: 65%;    
 }
 
 /*Deuxiéme section*/
@@ -596,9 +596,13 @@ width: 9rem;
 
 .hebergements-and-populaires section {
   margin-bottom: 50px;
-  background-color: #FFFFFF;
+  
 }
 
 
+.hebergements-and-populaires section hebergements {
+
+background-color: #FFFFFF;
 }
 
+}
