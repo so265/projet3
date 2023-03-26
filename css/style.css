@@ -496,30 +496,26 @@ header nav a {
   }
   
   .filtres {
-    width: 100%; /*100% plutot*/
+    width: 100%;
   }
-
+    #margin-fasfa {
+     
+      align-items: flex-start;
+      padding: 0px;
+      left: 13px;
+      right: 0px;
+      position: absolute;
+      margin-top: 110px;
   
+    }
   .fasfa {
     width: 20%;
   }
-
-  .margin-fasfa {
-   
-    align-items: flex-start;
-    padding: 0px;
-    left: 13px;
-    right: 0px;
-    position: absolute;
-    margin-top: 110px;
-
+    #info-people {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      
   }
-
-  #info-people {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    
-}
 
   .les-quatre-img-activités-Marseille {
     height: 200px;
