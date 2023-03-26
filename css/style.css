@@ -587,5 +587,18 @@ justify-content: flex-start;}
 .romantique{
 width: 9rem;
 } 
+
+
+.hebergements-and-populaires {
+  flex-direction: column-reverse;
+  
+}
+
+.hebergements-and-populaires section {
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+}
+
+
 }
 
