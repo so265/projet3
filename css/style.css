@@ -141,7 +141,9 @@ header nav a {
   margin-top: 2%; /*espace avec Marseille*/
 }
 
-
+#margin-fasfa {
+  display: flex;
+}
 
 .fasfa {
   display: flex;
