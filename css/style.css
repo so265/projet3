@@ -141,10 +141,8 @@ header nav a {
   margin-top: 2%; /*espace avec Marseille*/
 }
 
-#margin-fasfa {
-  display: flex;
-  justify-content: flex-start;
-}
+.ok {display: flex;
+justify-content: flex-start;}
 
 .fasfa {
   display: flex;
@@ -489,36 +487,43 @@ header nav a {
     font-size: 13px;
   }
 /***Fin code OC***/
-  
+  .les-quatre-img-activités-Marseille {
+    height: 200px;
+  }
+.filtres {
+  width: 100%;
+}
+  .ok {
+   
+    align-items: flex-start;
+    padding: 0px;
+    left: 13px;
+    right: 0px;
+    position: absolute;
+    margin-top: 110px;
 
+  }
+.fasfa {
+  width: 20%;
+}
+  #info-people {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+
+
+  
   .searchFilters {
     flex-wrap: wrap;
   }
   
   .filtres {
-    width: 100%;
-  }
-    #margin-fasfa {
-     
-      align-items: flex-start;
-      padding: 0px;
-      left: 13px;
-      right: 0px;
-      position: absolute;
-      margin-top: 110px;
-  
-    }
-  .fasfa {
-    width: 20%;
-  }
-    #info-people {
-      margin-top: 50px;
-      margin-bottom: 20px;
-      
+    width: 90%; /*100% plutot*/
   }
 
-  .les-quatre-img-activités-Marseille {
-    height: 200px;
+  .fasfa {
+    width: 25%;
   }
  
 }
