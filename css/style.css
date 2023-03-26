@@ -574,13 +574,15 @@ justify-content: flex-start;}
 
   .fasfa {
     width: 40%;
-    margin-left: -45px;
+    margin-left: -4%;
     padding-right: 50px;
 }
 
+
 .eco,
 .familial,
-.romantique{
+.romantique,
+.pepites{
 width: 9rem;
 } 
 
@@ -622,9 +624,7 @@ width: 9rem;
   width: 5%;
   min-width: 7%;
 }
-.fasfa {
-  margin-left: -11%;
-}
+
 .hosting {
   width: 96%;
 }
