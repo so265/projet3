@@ -496,9 +496,7 @@ justify-content: flex-start;}
   width: 100%;
 }
   
-.fasfa {
-  width: 20%;
-}
+
   #info-people {
     
     margin-bottom: 20px;
@@ -516,7 +514,7 @@ justify-content: flex-start;}
   }
 
   .fasfa {
-    width: 25%;
+    width: 40%;
     margin-left: -45px;
     padding-right: 50px;
  
