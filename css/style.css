@@ -599,10 +599,19 @@ width: 9rem;
   
 }
 
-
-.hebergements-and-populaires section hebergements {
-
-background-color: #FFFFFF;
+.populaire {     
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+.populaires-cards,   /***flex-direction column = met les éléments les uns en dessous des autres***/
+ .row-location,
+ .activity,
+ .contenu-footer
+{
+  flex-direction: column;
+}
+
 
 }
