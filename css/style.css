@@ -495,7 +495,11 @@ header nav a {
   }
   
   .filtres {
-    width: 90%;
+    width: 90%; /*100% plutot*/
+  }
+
+  .fasfa {
+    width: 25%;
   }
  
 }
