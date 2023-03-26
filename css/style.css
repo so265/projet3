@@ -656,11 +656,14 @@ width: 9rem;
 }
 /***Footer***/
 
-
-
-.contenu-footer {
- margin-left: 32px
+footer {
+  margin: unset;
+  flex-direction: column;
+  padding: 45px unset 20px 30px;
+  row-gap: 40px;
 }
+
+
 
 .bloc-footer-info {
   width: 100%;
