@@ -190,16 +190,16 @@ justify-content: flex-start;}
 }
 
 .eco {
-  width: 8rem; /*longueur border-radius*/
+  width: 7rem; /*longueur border-radius*/
 }
 .familial {
   width: 6rem;
 }
 .romantique {
-  width: 8rem;
+  width: 7rem;
 }
 .pepites {
-  width: 10rem;
+  width: 7rem;
 }
 
 /*info*/
@@ -464,6 +464,12 @@ justify-content: flex-start;}
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+  /***header logo-booki***/
+  #logo-booki {
+   margin: 30px auto;
+}
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -592,9 +598,9 @@ justify-content: flex-start;}
   }
 
   .fasfa {
-    width: 40%;
+    width: 28%;
     margin-left: -1%;
-    padding-right: 50px;
+    padding-right: 46px;
 }
 
 .eco,
@@ -690,7 +696,7 @@ background-color: #F2F2F2;
 }
 
 .bloc-footer-info {
-  width: auto;
+  width: auto; /*width permet de définir la largeur de la boîte du contenu d'un élément, auto c'est la valeur par défaut de width*/
   margin: 0;
   padding-left: 70px;
 }
