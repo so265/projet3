@@ -669,20 +669,21 @@ padding: 0px;
   width: 100%;
 }
 /***Footer***/
-
-footer {
-  margin: unset;
-  flex-direction: column;
+.main-container { /*code de oc ds desktop ici j'enléve les marges*/
+  padding: 0 0px;
+  }
   
-  background-color: #F2F2F2;
-}
-
-.main-container footer {
+  footer {
+   
+    flex-direction: column;
+    background-color: #F2F2F2;
+  }
   
-}
-
-
-.bloc-footer-info {
-  width: 100%;
-}
-}
+  
+  
+  .bloc-footer-info {
+    width: 100%;
+    margin: 0;
+      padding-left: 70px;
+  }
+  }
