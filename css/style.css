@@ -469,8 +469,8 @@ justify-content: flex-start;}
 
   /***header logo-booki***/
   #logo-booki {
-   margin: 30px auto;
-}
+    margin: 30px auto;
+ }
 
   .hebergements-and-populaires {
     flex-direction: column;
@@ -550,8 +550,11 @@ justify-content: flex-start;}
   }
 
   #logo-booki {
-  margin-right: 41%;
+  margin-right: 45%;
   align-self: flex-end;
+  
+   
+    
   }
 
   #border-topi {
