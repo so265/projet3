@@ -499,12 +499,9 @@ justify-content: flex-start;}
   #info-people {
     
     margin-bottom: 20px;
-    
 }
 
-
-  
-  .searchFilters {
+.searchFilters {
     flex-wrap: wrap;
   }
   
@@ -516,8 +513,7 @@ justify-content: flex-start;}
     width: 24%;
     margin-left: -45px;
     padding-right: 50px;
- 
-}
+ }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -526,10 +522,8 @@ justify-content: flex-start;}
 
   .main-container { /*code de oc ds desktop ici j'enléve les marges*/
     padding: 0 0px;
-
-    }
+ }
     
-
   .header {
     flex-wrap: wrap;
     align-items: flex-start;
@@ -595,7 +589,6 @@ justify-content: flex-start;}
     padding-right: 50px;
 }
 
-
 .eco,
 .familial,
 .romantique,
@@ -603,20 +596,18 @@ justify-content: flex-start;}
 width: 9rem;
 } 
 
-
 .hebergements-and-populaires {
   flex-direction: column-reverse;
-  
 }
 
 .hebergements-and-populaires section {
   margin-bottom: 30px;
-  
 }
 
 #white-hebergement {
   background-color: white;
 }
+
 .populaire {     
   display: flex;
   flex-direction: column;
@@ -664,8 +655,6 @@ padding: 0px;
   margin-left: 15px;
 }  
     
-
-
 .activity {
   width: 96%;
   padding: 2%;
@@ -685,21 +674,16 @@ padding: 0px;
   width: 100%;
 }
 /***Footer***/
-.main-container { /*code de oc ds desktop ici j'enléve les marges*/
-padding: 0 0px;
-}
+
 
 footer {
- 
-  flex-direction: column;
-  background-color: #F2F2F2;
+ flex-direction: column;
+background-color: #F2F2F2;
 }
-
-
 
 .bloc-footer-info {
   width: 100%;
   margin: 0;
-    padding-left: 70px;
+  padding-left: 70px;
 }
 }
