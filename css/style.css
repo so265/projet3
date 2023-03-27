@@ -425,7 +425,7 @@ justify-content: flex-start;}
   display: flex;
   margin-top: 4%;
   background-color: #f2f2f2;
-  margin: 0 50px;  /***probléme***/
+ 
 }
 
 .contenu-footer {
@@ -524,18 +524,27 @@ justify-content: flex-start;}
 @media (max-width: 767.98px) {
   /* ... */ /*fin code fourni par OC*/
 
+  .main-container { /*code de oc ds desktop ici j'enléve les marges*/
+    padding: 0 0px;
+
+    }
+    
+
   .header {
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 0%;
   }
+
   #title-header {
     flex-wrap: wrap;
   }
+
   #logo-booki {
     margin-right: auto;
     order: 0;
   }
+
   #border-topi {
     order: 2;
     border-top: none;
@@ -544,31 +553,38 @@ justify-content: flex-start;}
     width: 50%;
     text-align: center;
   }
+
   #black {
     order: 3;
     width: 50%;
     text-align: center;
   }
+
   #order {
     order: 1;
     width: 50%;
     text-align: right;
     padding-top: 3%;
   }
+
   .button-search {
     display: none;
   }
+
   .fas.fa-search {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .filtres {
     width: 90%;
   }
+
   #black {
     border-top: none;
   }
+
   .border-top:hover {
     border-top: none;
   }
@@ -670,20 +686,20 @@ padding: 0px;
 }
 /***Footer***/
 .main-container { /*code de oc ds desktop ici j'enléve les marges*/
-  padding: 0 0px;
-  }
-  
-  footer {
-   
-    flex-direction: column;
-    background-color: #F2F2F2;
-  }
-  
-  
-  
-  .bloc-footer-info {
-    width: 100%;
-    margin: 0;
-      padding-left: 70px;
-  }
-  }
+padding: 0 0px;
+}
+
+footer {
+ 
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+
+
+
+.bloc-footer-info {
+  width: 100%;
+  margin: 0;
+    padding-left: 70px;
+}
+}
