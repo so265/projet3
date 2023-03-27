@@ -425,6 +425,7 @@ justify-content: flex-start;}
   display: flex;
   margin-top: 4%;
   background-color: #f2f2f2;
+  margin: 0 50px;  /***probléme***/
 }
 
 .contenu-footer {
@@ -672,11 +673,13 @@ padding: 0px;
 footer {
   margin: unset;
   flex-direction: column;
-  padding: 45px unset 20px 30px;
-  row-gap: 40px;
+  
   background-color: #F2F2F2;
 }
 
+.main-container footer {
+  
+}
 
 
 .bloc-footer-info {
