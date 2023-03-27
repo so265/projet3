@@ -514,11 +514,7 @@ justify-content: flex-start;}
     margin-bottom: 20px;
 }
 
-
-  
- 
-
-  .fasfa {
+.fasfa {
     width: 24%;
     margin-left: -45px;
     padding-right: 50px;
@@ -535,7 +531,6 @@ justify-content: flex-start;}
     /***1er header***/ 
   #header {
     flex-direction: column;
-    
   }
 
   #logo-booki {
@@ -543,7 +538,7 @@ justify-content: flex-start;}
   }
 
   #title-header {
-    column-gap: unset;
+    column-gap: unset;  /*permet de définir la taille des espaces (gouttières) entre les colonnes unset=valeur initiale*/
     width: 100%;
   }
 
