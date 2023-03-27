@@ -28,23 +28,20 @@ body {
 /**Fin code OC**/
 
 /****1er header****/
-.header {
-  width: 90%;
-  z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
+#header {
   display: flex;
+  justify-content: space-between;
 }
 
 #title-header {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  column-gap: 69px;
+  margin-right: 50px;
 }
 
 #logo-booki {
-  height: 25px; /***réduit taille du logo car trop grand***/
-  margin-right: 70%;
-  align-self: flex-end;
-  /***padding-left: 5%;***/
+  height: 19px;
+    margin: 30px 50px;
 }
 
 #border-topi {
@@ -94,11 +91,13 @@ header nav a {
   border-radius: 20px 0 0 20px;
   text-align: center;
 }
+
 .searchForm {
   display: inline-flex;
   max-width: 100%;
   overflow: auto;
 }
+
 .input-search {
   border-right: none;
   border-left: none;
@@ -110,10 +109,12 @@ header nav a {
   font-size: 1rem;
   font-weight: bold;
 }
+
 .input-search::placeholder {
   font-size: 1rem;
   color: black;
 }
+
 .button-search {
   background-color: #0065fc;
   color: white;
@@ -289,8 +290,8 @@ justify-content: flex-start;}
   margin: auto;
   align-items: flex-start; /*positionne en haut du container*/
   justify-content: space-between; /*espace*/
-  
 }
+
 .hosting {
   width: 29%;
     margin-top: 33px;
@@ -422,7 +423,6 @@ justify-content: flex-start;}
   height: 470px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
-  
 }
 
 .title {
@@ -434,7 +434,6 @@ justify-content: flex-start;}
   display: flex;
   margin-top: 4%;
   background-color: #f2f2f2;
- 
 }
 
 .contenu-footer {
@@ -468,11 +467,8 @@ justify-content: flex-start;}
 @media (max-width: 1024px) {
 
   /***header logo-booki***/
-  #logo-booki {
-    margin: 30px auto;
- }
 
-  .hebergements-and-populaires {
+ .hebergements-and-populaires {
     flex-direction: column;
   }
 
@@ -503,16 +499,17 @@ justify-content: flex-start;}
     font-size: 13px;
   }
 /***Fin code OC***/
+
   .les-quatre-img-activités-Marseille {
     height: 200px;
   }
+
 .filtres {
   width: 100%;
 }
   
 
   #info-people {
-    
     margin-bottom: 20px;
 }
 
@@ -539,22 +536,18 @@ justify-content: flex-start;}
     padding: 0 0px;
  }
     /***1er header***/ 
-  .header {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 0%;
-  }
-
-  #title-header {
-    flex-wrap: wrap;
+  #header {
+    flex-direction: column;
+    
   }
 
   #logo-booki {
-  margin-right: 45%;
-  align-self: flex-end;
-  
-   
-    
+    margin: 30px auto;
+  }
+
+  .title-header {
+    column-gap: unset;
+    width: 100%;
   }
 
   #border-topi {
@@ -578,10 +571,6 @@ justify-content: flex-start;}
   .filtres {
     width: 90%;
     margin-left: 15px;
-  }
-
-  #black {
-    border-top: none;
   }
 
   .border-top:hover {
