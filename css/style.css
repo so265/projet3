@@ -27,6 +27,13 @@ body {
 }
 /**Fin code OC**/
 
+/****1er header****/
+.header {
+  width: 90%;
+  z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
+  display: flex;
+}
+
 #title-header {
   display: flex;
   width: 100%;
@@ -536,7 +543,7 @@ justify-content: flex-start;}
   .main-container { /*code de oc ds desktop ici j'enléve les marges*/
     padding: 0 0px;
  }
-    
+    /***1er header***/ 
   .header {
     flex-wrap: wrap;
     align-items: flex-start;
@@ -548,8 +555,9 @@ justify-content: flex-start;}
   }
 
   #logo-booki {
-    margin-right: auto;
     order: 0;
+    margin-right: 40%;
+  align-self: flex-end;
   }
 
   #border-topi {
@@ -561,11 +569,16 @@ justify-content: flex-start;}
     text-align: center;
   }
 
-  #black {
-    order: 3;
-    width: 50%;
-    text-align: center;
-  }
+  
+    
+    #black {
+     /* order: 2;*/
+      color: black;
+      padding-right: 30px;
+      padding-left: 20px;
+    }
+    
+  
 
   #order {
     order: 1;
@@ -601,6 +614,10 @@ justify-content: flex-start;}
     width: 28%;
     margin-left: -1%;
     padding-right: 46px;
+}
+
+.nombre {
+  width: 90%;
 }
 
 .eco,
