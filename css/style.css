@@ -42,7 +42,6 @@ body {
 
 #logo-booki {
   height: 25px; /***réduit taille du logo car trop grand***/
-  order: 0; /***La propriété CSS order permet de spécifier l'ordre d'affichage visuel d'un élément flexible***/
   margin-right: 70%;
   align-self: flex-end;
   /***padding-left: 5%;***/
@@ -51,13 +50,11 @@ body {
 #border-topi {
   border-top: 3px solid;
   color: #0065fc;
-  order: 1;
   text-align: right;
   padding-top: 1%;
 }
 
 #black {
-  order: 2;
   color: black;
   padding-right: 30px;
   padding-left: 20px;
@@ -396,8 +393,6 @@ justify-content: flex-start;}
   padding: 20px;
 }
   
-
-
 .activity {
   /**Englobe tout le bloc avec les 4 images **/
   display: flex;
@@ -555,13 +550,11 @@ justify-content: flex-start;}
   }
 
   #logo-booki {
-    order: 0;
-    margin-right: 40%;
+  margin-right: 40%;
   align-self: flex-end;
   }
 
   #border-topi {
-    order: 2;
     border-top: none;
     border-bottom: 5px solid #0065fc;
     padding-bottom: 10px;
@@ -569,25 +562,7 @@ justify-content: flex-start;}
     text-align: center;
   }
 
-  
-    
-    #black {
-     /* order: 2;*/
-      color: black;
-      padding-right: 30px;
-      padding-left: 20px;
-    }
-    
-  
-
-  #order {
-    order: 1;
-    width: 50%;
-    text-align: right;
-    padding-top: 3%;
-  }
-
-  .button-search {
+ .button-search {
     display: none;
   }
 
@@ -607,7 +582,7 @@ justify-content: flex-start;}
   }
 
   .border-top:hover {
-    border-top: none;
+    border-top: none;     /*******A voir******/
   }
 
   .fasfa {
