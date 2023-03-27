@@ -508,8 +508,7 @@ justify-content: flex-start;}
   width: 100%;
 }
   
-
-  #info-people {
+#info-people {
     margin-bottom: 20px;
 }
 
@@ -568,6 +567,9 @@ justify-content: flex-start;}
     align-items: center;
   }
 
+  
+    
+  
   .filtres {
     width: 90%;
     margin-left: 15px;
@@ -581,6 +583,10 @@ justify-content: flex-start;}
     width: 28%;
     margin-left: -1%;
     padding-right: 46px;
+}
+
+#info-people {
+  margin-bottom: 0px;
 }
 
 .nombre {
