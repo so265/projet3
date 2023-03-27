@@ -593,7 +593,7 @@ width: 9rem;
 }
 
 .hebergements-and-populaires section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   
 }
 
@@ -621,7 +621,7 @@ width: 9rem;
 }
 
 .input-search {
-  width: 10.5rem;
+  width: 10.6rem;
 }
 .fas.fa-info {
   width: 5%;
@@ -630,11 +630,25 @@ width: 9rem;
 
 .hosting {
   width: 96%;
+
 }
+
+.more {
+padding: 0px;
+}
+
 .hosting-img {
   width: 100%;
   height: 180px;
 }
+
+.activites-marseille {
+  margin-top: 0px;
+  margin-left: 15px;
+}  
+    
+
+
 .activity {
   width: 96%;
   padding: 2%;
@@ -660,6 +674,7 @@ footer {
   flex-direction: column;
   padding: 45px unset 20px 30px;
   row-gap: 40px;
+  background-color: #F2F2F2;
 }
 
 
