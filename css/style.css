@@ -690,7 +690,7 @@ background-color: #F2F2F2;
 }
 
 .bloc-footer-info {
-  width: 100%;
+  width: auto;
   margin: 0;
   padding-left: 70px;
 }
