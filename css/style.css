@@ -50,7 +50,7 @@ body {
   text-align: right;
   padding-top: 1%;
   padding-top: 4%;
-  margin: -6px;
+  margin: -9.5px;
 }
 
 #black {
@@ -540,6 +540,13 @@ justify-content: flex-start;}
     flex-direction: column;
     
   }
+  header nav a {
+   
+    width: 50%;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #F2F2F2;
+  }
 
   #logo-booki {
     margin: 30px auto;
@@ -548,16 +555,28 @@ justify-content: flex-start;}
   .title-header {
     column-gap: unset;
     width: 100%;
+    
+      
+       column-gap: 0px;
+       margin-right: 0px; 
+  }
   }
 
   #border-topi {
     border-top: none;
     border-bottom: 5px solid #0065fc;
     padding-bottom: 10px;
-    width: 50%;
+    width: 70%;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
   }
 
+  #black {
+    padding-left: 0px;
+    text-align: center;
+  }
+  
  .button-search {
     display: none;
   }
