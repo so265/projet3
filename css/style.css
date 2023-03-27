@@ -145,6 +145,7 @@ header nav a {
   align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 2%; /*espace avec Marseille*/
+  column-gap: 15px;
 }
 
 .margin-fasfa {
@@ -512,9 +513,7 @@ justify-content: flex-start;}
     margin-bottom: 20px;
 }
 
-.searchFilters {
-    flex-wrap: wrap;
-  }
+
   
   .filtres {
     width: 100%; /*100% plutot*/
@@ -567,7 +566,9 @@ justify-content: flex-start;}
     align-items: center;
   }
 
-  
+  .searchFilters {
+    flex-wrap: wrap;
+  }
     
   
   .filtres {
