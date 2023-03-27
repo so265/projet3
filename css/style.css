@@ -516,9 +516,7 @@ justify-content: flex-start;}
 
 
   
-  .filtres {
-    width: 100%; /*100% plutot*/
-  }
+ 
 
   .fasfa {
     width: 24%;
@@ -544,14 +542,24 @@ justify-content: flex-start;}
     margin: 30px auto;
   }
 
-  .title-header {
+  #title-header {
     column-gap: unset;
     width: 100%;
   }
 
   #border-topi {
     border-top: none;
-    border-bottom: 5px solid #0065fc;
+    border-bottom: 3px solid #0065fc;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 0px;
+  }
+
+  .border-top {
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
     padding-bottom: 10px;
     width: 50%;
     text-align: center;
@@ -579,9 +587,9 @@ justify-content: flex-start;}
     margin-left: 15px;
   }
 
-  .border-top:hover {
+ /* .border-top:hover {
     border-top: none;     /*******A voir******/
-  }
+ /* }*/
 
   .fasfa {
     width: 28%;
