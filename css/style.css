@@ -592,6 +592,7 @@ footer {
 
 .searchHeader {
   margin-top: 15px;
+  width: 80%;
 }
 
 #info-people {
@@ -601,6 +602,7 @@ footer {
 
 .centre {
   margin-bottom: 30px;
+  margin-top: 5px;
 }
 
   .input-search {
