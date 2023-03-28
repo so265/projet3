@@ -537,6 +537,16 @@ footer {
 @media (max-width: 767.98px) {
   /* ... */ /*fin code fourni par OC*/
 
+ /* * {     /*voir si j enleve/*/
+  /*  margin-left: 0;
+    padding-left:  0;
+  }*/
+
+  body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
   .main-container { /*code de oc ds desktop ici j'enléve les marges blanches sur les cotés*/
     padding: 0 0px;
  }
@@ -574,6 +584,25 @@ footer {
     padding-top: 0px;
   }
 
+.searchHeader, 
+.searchForm,
+.searchFilters {
+  padding: 0 20px;
+}
+
+.searchHeader {
+  margin-top: 15px;
+}
+
+#info-people {
+  margin-bottom: 0px;
+  padding: 0 25px;
+}
+
+.centre {
+  margin-bottom: 30px;
+}
+
   .input-search {
     width: 14rem;
 }
@@ -606,12 +635,8 @@ footer {
     padding-right: 46px;
 }
 
-#info-people {
-  margin-bottom: 0px;
-}
-
 .nombre {
-  width: 90%;
+  width: 80%;
 }
 
 .eco,
@@ -645,6 +670,7 @@ width: 9rem;
  .contenu-footer
 {
   flex-direction: column;
+  width: 96%;
 }
 
 /****dernier code***/
@@ -684,7 +710,7 @@ padding: 0px;
 }
 
 .bloc {
-  width: 100%;
+  width: 96%;
 }
 
 .port-pomegues-calanques-garde {
@@ -692,8 +718,7 @@ padding: 0px;
 }
 
 .les-quatre-img-activités-Marseille {
-  width: 100%;
-  height: 280px;
+  height: 180px;
   width: 100%;
 }
 
@@ -706,7 +731,5 @@ background-color: #F2F2F2;
 
 .bloc-footer-info {
   width: auto; /*width permet de définir la largeur de la boîte du contenu d'un élément, auto c'est la valeur par défaut de width*/
-  margin: 0;
-  padding-left: 70px;
 }
 }
