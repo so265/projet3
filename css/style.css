@@ -86,10 +86,22 @@ header nav a {
 
 /* logo gps*/
 
+.loupe {   /***loupe****/
+  width: 49px;
+  border-radius: 15px;
+  display: none;   /***Pour qu'ele disparaisse en version desktop et display block en version mobile pour la faire apparaitre***/
+  right: 0;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
 .fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   padding: 1rem 1.25rem;
-  border-radius: 20px 0 0 20px;
+  border-radius: 15px 0 0 15px;
   text-align: center;
 }
 
@@ -106,12 +118,16 @@ header nav a {
   border-bottom: #f2f2f2 1px solid;
   padding: 0 1.25rem; /*Deplace Marseille au centre*/
   box-sizing: border-box; /*Deplace rechercher vers la gauche*/
-  width: 14rem; /*longueur border radius*/
+  width: 12rem; /*longueur border radius*/
   font-size: 1rem;
   font-weight: bold;
 }
 
-.input-search::placeholder {
+.input-search:focus {  /***Imput-search au click***/
+  outline: none;  /***Les contours CSS d'outline se situent après la bordure***/
+  }
+
+.input-search::placeholder {  /***placeholder = texte Marseille France****/
   font-size: 1rem;
   color: black;
 }
@@ -127,18 +143,7 @@ header nav a {
   cursor: pointer;
   display: block;
 }
-.fas.fa-search {
-  background-color: #0065fc;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 0 20px 20px 0;
-  padding: 0 1.25rem;
-  font-size: 1rem;
-  cursor: pointer;
-  display: none;
-  text-align: center;
-}
+
 
 /*search filters*/
 .searchFilters {
@@ -562,9 +567,16 @@ justify-content: flex-start;}
     padding-top: 0px;
   }
 
- .button-search {
+  .input-search {
+    width: 14rem;
+}
+
+ .button-search {  /****Pour faire disparaître le boutton rechercher et faire apparaître la loupe à la place****/
     display: none;
   }
+
+  .loupe {            /****loupe****/
+    display: block;}
 
   .fas.fa-search {
     display: flex;
@@ -581,10 +593,6 @@ justify-content: flex-start;}
     width: 90%;
     margin-left: 15px;
   }
-
- /* .border-top:hover {
-    border-top: none;     /*******A voir******/
- /* }*/
 
   .fasfa {
     width: 28%;
@@ -639,9 +647,7 @@ width: 9rem;
   width: 100%;
 }
 
-.input-search {
-  width: 10.6rem;
-}
+
 .fas.fa-info {
   width: 5%;
   min-width: 7%;
