@@ -76,6 +76,13 @@ header nav a {
 }
 
 /*1ére section*/
+
+.searchHeader {   /***voir si necessaire***/
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #trouvez {
   margin-bottom: 5px;
 }
@@ -437,7 +444,7 @@ justify-content: flex-start;}
 }
 
 /***FOOTER***/
-.footer {
+footer {
   display: flex;
   margin-top: 4%;
   background-color: #f2f2f2;
@@ -530,7 +537,7 @@ justify-content: flex-start;}
 @media (max-width: 767.98px) {
   /* ... */ /*fin code fourni par OC*/
 
-  .main-container { /*code de oc ds desktop ici j'enléve les marges*/
+  .main-container { /*code de oc ds desktop ici j'enléve les marges blanches sur les cotés*/
     padding: 0 0px;
  }
     /***1er header***/ 
@@ -588,7 +595,6 @@ justify-content: flex-start;}
     flex-wrap: wrap;
   }
     
-  
   .filtres {
     width: 90%;
     margin-left: 15px;
@@ -690,8 +696,8 @@ padding: 0px;
   height: 280px;
   width: 100%;
 }
-/***Footer***/
 
+/***Footer***/
 
 footer {
  flex-direction: column;
