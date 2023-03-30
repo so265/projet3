@@ -162,7 +162,7 @@ display: flex;
   align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 2%; /*espace avec Marseille*/
-  column-gap: 15px;
+  
 }
 
 .margin-fasfa {
@@ -221,9 +221,9 @@ justify-content: flex-start;}
 .romantique {
   width: 7rem;
 }
-.pepites {
-  width: 7rem;
-}
+/*.pepites {
+  width: 7rem; 
+}*/
 
 /*info*/
 .fas.fa-info {
@@ -532,8 +532,7 @@ footer {
 
 .fasfa {
     width: 24%;
-   /* margin-left: -45px;*/
-    padding-right: 50px;
+  
  }
 }
 
