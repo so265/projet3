@@ -16,6 +16,7 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;   /***ajout dececi pour que la barre bleue se colle en haut****/
 }
 
 .main-container {
@@ -39,6 +40,10 @@ body {
   margin-right: 50px;
 }
 
+#header nav a {
+  padding-top: 16px;  /***fait descendre la nav hebergement et activites plus bas pour voir la barre bleue au-dessus***/
+}
+
 #logo-booki {
   height: 19px;
     margin: 30px 0px;
@@ -49,7 +54,6 @@ body {
   color: #0065fc;
   text-align: right;
   padding-top: 3%;
-  margin: -6px;
 }
 
 #black {
