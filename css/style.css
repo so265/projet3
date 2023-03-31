@@ -525,6 +525,10 @@ footer {
 .filtres {
   width: 100%;
 }
+
+.searchFilters {
+  flex-wrap: wrap;
+}
   
 #info-people {
     margin-bottom: 20px;
@@ -625,9 +629,7 @@ footer {
     align-items: center;
   }
 
-  .searchFilters {
-    flex-wrap: wrap;
-  }
+  
     
   .filtres {
     width: 90%;
