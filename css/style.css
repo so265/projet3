@@ -640,8 +640,8 @@ footer {
     padding-right: 46px;
 }
 
-.nombre {
-  width: 80%;
+.fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fa-sharp.fa-solid.fa-fire {
+ left: 25px;
 }
 
 .eco,
@@ -649,7 +649,13 @@ footer {
 .romantique,
 .pepites{
 width: 9rem;
+font-size: initial;
+padding-left: 35px;
 } 
+
+.nombre {
+  width: 80%;
+}
 
 .hebergements-and-populaires {
   flex-direction: column-reverse;
