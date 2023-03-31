@@ -184,7 +184,7 @@ justify-content: flex-start;}
   cursor: pointer;
   justify-content: center; /*centre logo money*/
   position: relative;
-  left: 50px; /*Permet d'inserer le logo dans economique*/
+  left: 32px; /*Permet de placer le logo à la bonne place*/
 }
 
 .eco,
@@ -197,7 +197,7 @@ justify-content: flex-start;}
   align-items: center;
   border-radius: 30px;
   border: #f2f2f2 0.2rem solid;
-  padding-left: 59px; /*marge à l'interieur des border-radius*/
+  padding-left: 40px; /*marge à l'interieur des border-radius*/
   height: 49px;
   font-size: 1.1rem; /*epaisseur caractere*/
   font-weight: bold; /*graisse utilisée pour le texte*/
@@ -208,8 +208,7 @@ justify-content: flex-start;}
 .romantique:hover,
 .pepites:hover:hover {
   background-color: #deebff;
- /* border: #deebff 0.2rem solid;*/
- border: 2px solid #d9d9d9;
+  border: 2px solid #d9d9d9;
 }
 
 .eco {
@@ -221,9 +220,9 @@ justify-content: flex-start;}
 .romantique {
   width: 7rem;
 }
-/*.pepites {
+.pepites {
   width: 7rem; 
-}*/
+}
 
 /*info*/
 .fas.fa-info {
