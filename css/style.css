@@ -638,7 +638,7 @@ footer {
 
   .fasfa {
     width: 35%;
-    
+    margin-inline: 20px;
 }
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fa-sharp.fa-solid.fa-fire {
