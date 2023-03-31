@@ -522,7 +522,7 @@ footer {
   }
 
 .filtres {
-  width: 100%;
+  width: 90%;
 }
 
 .searchFilters {
@@ -631,13 +631,14 @@ footer {
   
     
   .filtres {
-    width: 90%;
+   /* width: 90%;*/ 
     margin-left: 15px;
   }
 
   .fasfa {
     width: 35%;
     margin-inline: 20px;
+    justify-content: space-around;
 }
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fa-sharp.fa-solid.fa-fire {
@@ -648,7 +649,7 @@ footer {
 .familial,
 .romantique,
 .pepites{
-width: 9rem;
+width: 20rem;
 font-size: initial;
 padding-left: 35px;
 } 
