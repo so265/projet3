@@ -213,7 +213,11 @@ display: flex;
   width: 7rem; 
 }
 
-/*info*/
+/*info-people plus dee 500 logements*/
+.info-people {
+  display: flex;
+}
+
 .fas.fa-info {
   color: #0065fc;
   cursor: pointer;
