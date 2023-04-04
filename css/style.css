@@ -521,6 +521,7 @@ footer {
   
 #info-people {
     margin-bottom: 20px;
+   
 }
 
 .fasfa {
@@ -583,6 +584,8 @@ footer {
 
 #info-people {
   margin-bottom: 0px;
+  display: flex;
+  align-items: center;
   
 }
 
