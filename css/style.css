@@ -235,7 +235,7 @@ display: flex;
 }
 
 .nombre {
-  display: inline-flex; /*necessaire pour que la phrase reste bien à sa place en version mobile"*/
+ 
   margin-left: 0.5%;
 }
 
@@ -459,7 +459,7 @@ footer {
 .ancrebis2 {
   color: black;
   text-decoration: none;
-  line-height: 1.9;
+ /* line-height: 1.9;*/
   display: block;
 }
 /***Fin footer***/
@@ -639,7 +639,7 @@ font-size: small;
 }
 
 .nombre {
-  width: 80%;
+   display: inline-flex; /*necessaire pour que la phrase reste bien à sa place en version mobile"*/
 }
 
 
