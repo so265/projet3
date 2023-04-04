@@ -582,6 +582,10 @@ footer {
   width: 80%;
 }
 
+#trouvez {
+  font-size: 18px;
+}
+
 #info-people {
   margin-bottom: 0px;
   display: flex;
@@ -589,10 +593,9 @@ footer {
   
 }
 
-/*.centre {
-  margin-bottom: 30px;
-  margin-top: 5px;
-}*/
+.centre {
+ font-size: 13px;
+}
 
   .input-search {
    flex: 1;
@@ -620,6 +623,7 @@ footer {
   .filtres {
     /* width: 90%;*/ 
     margin-left: 15px;
+    margin-bottom: 0;
   }
 
   .fasfa {
