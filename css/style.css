@@ -105,7 +105,7 @@ display: flex;
 }
 
 .searchForm {
-  display: inline-flex;
+  display: flex;     /****imput-search flex :1 en version mobile, prend toute la largeur****/
   max-width: 100%;
 }
 
@@ -588,7 +588,7 @@ footer {
 }*/
 
   .input-search {
-   /* width: 14rem;*/
+   flex: 1;
    
   }
 
