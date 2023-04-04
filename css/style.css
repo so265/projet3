@@ -16,7 +16,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;   /***ajout dececi pour que la barre bleue se colle en haut****/
+  margin: 0;   /***ajout de ceci pour que border-topi(barre bleue) se colle en haut****/
 }
 
 .main-container {
@@ -46,7 +46,7 @@ body {
 
 #logo-booki {
   height: 19px;
-    margin: 30px 0px;
+  margin: 30px 0px;
 }
 
 #border-topi {
@@ -60,18 +60,6 @@ body {
   color: black;
   padding-right: 30px;
   padding-left: 20px;
-}
-
-.border-top {
-  text-align: right;
-  padding-top: 1%;
-}
-
-.border-top :hover {
-  /****de l63 a l 72 pas à faire à verifier***/
-  border: white;
-  border-top: 3px solid;
-  color: #0065fc;
 }
 
 header nav a {
@@ -100,7 +88,7 @@ display: flex;
 .loupe {   /***loupe****/
   width: 49px;
   border-radius: 15px;
-  display: none;   /***Pour qu'ele disparaisse en version desktop et display block en version mobile pour la faire apparaitre***/
+  display: none;   /***dispalay-none pour qu'ele disparaisse en version desktop et display block en version mobile pour la faire apparaitre***/
   right: 0;
   background-color: #0065fc;
   color: white;
@@ -119,7 +107,6 @@ display: flex;
 .searchForm {
   display: inline-flex;
   max-width: 100%;
-  overflow: auto;
 }
 
 .input-search {
@@ -127,18 +114,20 @@ display: flex;
   border-left: none;
   border-top: #f2f2f2 1px solid;
   border-bottom: #f2f2f2 1px solid;
-  padding: 0 1.25rem; /*Deplace Marseille au centre*/
+  padding: 0 1.25rem; /*Deplace Marseille vers le centre*/
   box-sizing: border-box; /*Deplace rechercher vers la gauche*/
   width: 12rem; /*longueur border radius*/
   font-size: 1rem;
   font-weight: bold;
+ 
 }
 
 .input-search:focus {  /***Imput-search au click***/
-  outline: none;  /***Les contours CSS d'outline se situent après la bordure***/
-  }
+  outline: none; 
+ } /***Les contours CSS d'outline se situent après la bordure, permet de les faire disparaître***/
+ 
 
-.input-search::placeholder {  /***placeholder = texte Marseille France****/
+.input-search::placeholder {         /***placeholder = texte Marseille France****/
   font-size: 1rem;
   color: black;
 }
@@ -167,7 +156,7 @@ display: flex;
 
 .margin-fasfa {
   display: flex;
-justify-content: flex-start;}
+  justify-content: flex-start;}
 
 .fasfa {
   display: flex;
@@ -246,7 +235,7 @@ justify-content: flex-start;}
 }
 
 .nombre {
-  display: inline-flex;
+  display: inline-flex; /*necessaire pour que la phrase reste bien à sa place en version mobile"*/
   margin-left: 0.5%;
 }
 
@@ -322,7 +311,6 @@ justify-content: flex-start;}
 .hosting-img {
   border-radius: 20px 20px 0 0;
   cursor: pointer;
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
@@ -405,7 +393,7 @@ justify-content: flex-start;}
 /*Fin copde fourni par OC*/
 
 /*Quatriéme section et derniére section, activites Marseille*/
-/* Les quatre images horizontales sont de même taille*/
+/* Les quatre images horizontales ont une taille identique.*/
 .activites-marseille {
   margin-top: 35px;
   padding: 20px;
@@ -483,9 +471,7 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-  /***header logo-booki***/
-
- .hebergements-and-populaires {
+  .hebergements-and-populaires {
     flex-direction: column;
   }
 
@@ -543,12 +529,7 @@ footer {
 @media (max-width: 767.98px) {
   /* ... */ /*fin code fourni par OC*/
 
- /* * {     /*voir si j enleve/*/
-  /*  margin-left: 0;
-    padding-left:  0;
-  }*/
-
-  body {
+ body {
     margin-left: 0;
     margin-right: 0;
 }
@@ -580,20 +561,15 @@ footer {
     padding-top: 0px;
   }
 
-  .border-top {
-    border-top: none;
+  .border-bottom {
     border-bottom: 3px solid #F2F2F2;
-    padding-bottom: 10px;
     width: 50%;
     text-align: center;
     margin: 0px;
-    padding-top: 0px;
-  }
+}
 
-.searchHeader, 
-.searchForm,
-.searchFilters {
-  padding: 0 20px;
+  .searchSection {
+    padding: 0 20px;
 }
 
 .searchHeader {
@@ -603,17 +579,21 @@ footer {
 
 #info-people {
   margin-bottom: 0px;
-  padding: 0 25px;
+  
 }
 
-.centre {
+/*.centre {
   margin-bottom: 30px;
   margin-top: 5px;
-}
+}*/
 
   .input-search {
-    width: 14rem;
-}
+   /* width: 14rem;*/
+   
+  }
+
+
+
 
  .button-search {  /****Pour faire disparaître le boutton rechercher et faire apparaître la loupe à la place****/
     display: none;
@@ -631,13 +611,13 @@ footer {
   
     
   .filtres {
-   /* width: 90%;*/ 
+    /* width: 90%;*/ 
     margin-left: 15px;
   }
 
   .fasfa {
-    width: 36%;
-    margin-inline: 20px;
+    width: 30%;
+    margin-inline: 24px;
     justify-content: space-around;
 }
 
@@ -650,13 +630,18 @@ footer {
 .romantique,
 .pepites{
 width: 20rem;
-font-size: initial;
+font-size: small;
 /*padding-left: 35px;*/
 } 
+
+.fas.fa-info {
+  margin-right: 15px;
+}
 
 .nombre {
   width: 80%;
 }
+
 
 .hebergements-and-populaires {
   flex-direction: column-reverse;
@@ -692,13 +677,12 @@ font-size: initial;
 }
 
 
-.fas.fa-info {
+/*.fas.fa-info { A supprimer
   width: 5%;
-}
+}*/
 
 .hosting {
   width: 96%;
-
 }
 
 .more {
