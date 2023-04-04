@@ -636,10 +636,11 @@ font-size: small;
 
 .fas.fa-info {
   margin-right: 15px;
+  display: inline-flex;
 }
 
 .nombre {
-  
+  width: 80%;
 }
 
 
