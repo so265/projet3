@@ -512,12 +512,10 @@ footer {
   }
 
 .filtres {
-  width: 90%;
+ 
 }
 
-.searchFilters {
-  flex-wrap: wrap;
-}
+
   
 #info-people {
     margin-bottom: 20px;
@@ -598,7 +596,7 @@ footer {
 }
 
   .input-search {
-   flex: 1;
+   flex: auto;
    
   }
 
@@ -618,30 +616,39 @@ footer {
     align-items: center;
   }
 
-  
+  /***************Filtres***********/
+
+  .searchFilters {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
     
   .filtres {
-    /* width: 90%;*/ 
+    width: 90%;
     margin-left: 15px;
     margin-bottom: 0;
   }
 
   .fasfa {
-    width: 30%;
-    margin-inline: 24px;
-    justify-content: space-around;
+    
+    padding: unset;
+    width: calc(50% - 10px);
+    font-size: 14px;
+    justify-content: center;
 }
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fa-sharp.fa-solid.fa-fire {
- left: 25px;
+ left: 32px;
 }
 
 .eco,
 .familial,
 .romantique,
 .pepites{
-width: 20rem;
+
 font-size: small;
+flex: auto;
+
 /*padding-left: 35px;*/
 } 
 
