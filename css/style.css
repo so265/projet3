@@ -201,13 +201,13 @@ display: flex;
 }
 
 .eco {
-  width: 7rem; /*longueur border-radius*/
+  width: 8rem; /*longueur border-radius*/
 }
 .familial {
-  width: 6rem;
+  width: 7rem;
 }
 .romantique {
-  width: 7rem;
+  width: 8rem;
 }
 .pepites {
   width: 7rem; 
@@ -512,10 +512,12 @@ footer {
   }
 
 .filtres {
- 
+ width: 90%;
 }
 
-
+.searchFilters {
+  flex-wrap: wrap;
+}
   
 #info-people {
     margin-bottom: 20px;
@@ -523,7 +525,7 @@ footer {
 }
 
 .fasfa {
-    width: 24%;
+    width: 25%;
   
  }
 }
@@ -619,12 +621,12 @@ footer {
   /***************Filtres***********/
 
   .searchFilters {
-    flex-wrap: wrap;
+
     gap: 20px;
   }
     
   .filtres {
-    width: 90%;
+    
     margin-left: 15px;
     margin-bottom: 0;
   }
