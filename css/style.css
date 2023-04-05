@@ -589,7 +589,7 @@ footer {
 }
 
 #trouvez {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #info-people {
@@ -600,7 +600,7 @@ footer {
 }
 
 .centre {
- font-size: 13px;
+ font-size: 12px;
 }
 
   .input-search {
@@ -664,6 +664,7 @@ flex: auto;
 
 .nombre {
   width: 80%;
+  font-size: 12px;
 }
 
 
