@@ -465,6 +465,7 @@ footer {
   text-decoration: none;
  /* line-height: 1.9;*/
   display: block;
+
 }
 /***Fin footer***/
 
@@ -529,10 +530,7 @@ footer {
   
  }
 }
-/*footer*/
-.ancrebis2 {
-  font-size: x-small;
-}
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -606,10 +604,7 @@ footer {
    
   }
 
-
-
-
- .button-search {  /****Pour faire disparaître le boutton rechercher et faire apparaître la loupe à la place****/
+.button-search {  /****Pour faire disparaître le boutton rechercher et faire apparaître la loupe à la place****/
     display: none;
   }
 
@@ -752,4 +747,9 @@ background-color: #F2F2F2;
 .bloc-footer-info {
   width: auto; /*width permet de définir la largeur de la boîte du contenu d'un élément, auto c'est la valeur par défaut de width*/
 }
+/*footer*/
+.ancrebis2 {
+  font-size: x-small;
+}
+
 }
