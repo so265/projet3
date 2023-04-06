@@ -513,12 +513,20 @@ footer {
     margin-bottom: 20px;
   }
 
-  .les-quatre-img-activités-Marseille {
+  .card-title {
+    font-size: 13px;
+}
+
+.tarif1 {
+  font-size: 13px;
+}
+
+.les-quatre-img-activités-Marseille {
     height: 200px;
   }
 
   .ancrebis2 {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.9;
   }
 }
