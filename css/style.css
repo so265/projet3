@@ -644,6 +644,7 @@ footer {
   .fas.fa-heart,
   .fa-sharp.fa-solid.fa-fire {
     left: 32px;
+    font-size: 15px;
   }
 
   .eco,
