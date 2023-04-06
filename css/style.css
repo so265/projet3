@@ -16,7 +16,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;   /***ajout de ceci pour que border-topi(barre bleue) se colle en haut****/
+  margin: 0; /***ajout de ceci pour que border-topi(barre bleue) se colle en haut****/
 }
 
 .main-container {
@@ -41,7 +41,9 @@ body {
 }
 
 #header nav a {
-  padding-top: 16px;  /***fait descendre la nav hebergement et activites plus bas pour voir la barre bleue au-dessus***/
+  padding-top: 16px; /***fait descendre la nav hebergement et activites plus bas pour voir la barre bleue au-dessus***/
+  color: #0065fc;
+  text-decoration: none; /*supprime les traits en dessous*/
 }
 
 #logo-booki {
@@ -62,39 +64,28 @@ body {
   padding-left: 20px;
 }
 
-header nav a {
-  color: #0065fc;
-  text-decoration: none; /*supprime les traits en dessous*/
-}
-
 /*1ére section*/
 
-.searchHeader {   /***voir si necessaire***/
-display: flex;
+.searchHeader {
+  /***voir si necessaire***/
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#trouvez {
+#find {
   margin-bottom: 5px;
 }
 
-.centre {
+.center {
   margin-top: 0;
 }
 
-/* logo gps*/
+/* Logo gps/input Marseille, France/button*/
 
-.loupe {   /***loupe****/
-  width: 49px;
-  border-radius: 15px;
-  display: none;   /***dispalay-none pour qu'ele disparaisse en version desktop et display block en version mobile pour la faire apparaitre***/
-  right: 0;
-  background-color: #0065fc;
-  color: white;
-  border: none;
-  cursor: pointer;
-  text-align: center;
+.searchForm {
+  display: flex; /****imput-search flex :1 en version mobile, prend toute la largeur****/
+  max-width: 100%;
 }
 
 .fas.fa-map-marker-alt {
@@ -102,11 +93,6 @@ display: flex;
   padding: 1rem 1.25rem;
   border-radius: 15px 0 0 15px;
   text-align: center;
-}
-
-.searchForm {
-  display: flex;     /****imput-search flex :1 en version mobile, prend toute la largeur****/
-  max-width: 100%;
 }
 
 .input-search {
@@ -119,15 +105,15 @@ display: flex;
   width: 12rem; /*longueur border radius*/
   font-size: 1rem;
   font-weight: bold;
- 
 }
 
-.input-search:focus {  /***Imput-search au click***/
-  outline: none; 
- } /***Les contours CSS d'outline se situent après la bordure, permet de les faire disparaître***/
- 
+.input-search:focus {
+  /***Imput-search au click***/
+  outline: none;
+} /***Les contours CSS d'outline se situent après la bordure, permet de les faire disparaître***/
 
-.input-search::placeholder {         /***placeholder = texte Marseille France****/
+.input-search::placeholder {
+  /***placeholder = texte Marseille France****/
   font-size: 1rem;
   color: black;
 }
@@ -144,6 +130,18 @@ display: flex;
   display: block;
 }
 
+.loupe {
+  /***loupe****/
+  width: 49px;
+  border-radius: 15px;
+  display: none; /***dispalay-none pour qu'ele disparaisse en version desktop et display block en version mobile pour la faire apparaitre***/
+  right: 0;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
 
 /*search filters*/
 .searchFilters {
@@ -151,12 +149,13 @@ display: flex;
   align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 2%; /*espace avec Marseille*/
-  
 }
 
 .margin-fasfa {
+  /*n'existe plus à verifier*/
   display: flex;
-  justify-content: flex-start;}
+  justify-content: flex-start;
+}
 
 .fasfa {
   display: flex;
@@ -188,7 +187,7 @@ display: flex;
   border: #f2f2f2 0.2rem solid;
   padding-left: 40px; /*marge à l'interieur des border-radius*/
   height: 49px;
-  font-size: 1.1rem; /*epaisseur caractere*/
+  font-size: 1rem; /*epaisseur caractere*/
   font-weight: bold; /*graisse utilisée pour le texte*/
 }
 
@@ -210,7 +209,7 @@ display: flex;
   width: 8rem;
 }
 .pepites {
-  width: 7rem; 
+  width: 7rem;
 }
 
 /*info-people plus dee 500 logements*/
@@ -286,12 +285,13 @@ display: flex;
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/ 
-.hebergements {   /**Fourni par OC***/
-  width: 65%;    
+/****** Hebergements ***********/
+.hebergements {
+  /**Fourni par OC***/
+  width: 65%;
 }
 
-/*Deuxiéme section*/
+/*Deuxiéme section hébergements à Marseille*/
 /* Trois premiéres images horizontales*/
 
 .row-location {
@@ -304,12 +304,12 @@ display: flex;
 
 .hosting {
   width: 29%;
-    margin-top: 33px;
-    cursor: pointer;
-    background: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 33px;
+  cursor: pointer;
+  background: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .hosting-img {
@@ -329,25 +329,16 @@ display: flex;
   margin: 0;
 }
 
-.fas.fas.fa-star1 {
-  color: #0065fc;
-}
-
-.fas.fas.fa-star1[data-active="false"] {
-  color: #d7dbdf;
-}
-
-.ancre {
-  color: black;
-  text-decoration: none;
-  display: block;
-}
-
 .more {
   font-size: 1.2em;
   margin: auto;
   margin: 0;
   padding: 20px;
+}
+.ancre {
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 
 /****** Populaires 3éme section aside fourni par OC ***********/
@@ -402,7 +393,7 @@ display: flex;
   margin-top: 35px;
   padding: 20px;
 }
-  
+
 .activity {
   /**Englobe tout le bloc avec les 4 images **/
   display: flex;
@@ -463,9 +454,8 @@ footer {
 .ancrebis2 {
   color: black;
   text-decoration: none;
- /* line-height: 1.9;*/
+  /* line-height: 1.9;*/
   display: block;
-
 }
 /***Fin footer***/
 
@@ -475,7 +465,6 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -506,49 +495,47 @@ footer {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-/***Fin code OC***/
+  /***********Fin code OC***********/
+
+  .searchFilters {
+    flex-wrap: wrap;
+  }
+
+  .filtres {
+    width: 90%;
+  }
+
+  .fasfa {
+    width: 25%;
+  }
+
+  #info-people {
+    margin-bottom: 20px;
+  }
 
   .les-quatre-img-activités-Marseille {
     height: 200px;
   }
 
-.filtres {
- width: 90%;
+  .ancrebis2 {
+    font-size: small;
+  }
 }
-
-.searchFilters {
-  flex-wrap: wrap;
-}
-  
-#info-people {
-    margin-bottom: 20px;
-   
-}
-
-.fasfa {
-    width: 25%;
-  
- }
- .ancrebis2 {
-  font-size: x-small;
-}
-
-}
-
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */ /*fin code fourni par OC*/
 
- body {
+  body {
     margin-left: 0;
     margin-right: 0;
-}
+  }
 
-  .main-container { /*code de oc ds desktop ici j'enléve les marges blanches sur les cotés*/
+  .main-container {
+    /*code de oc ds desktop ici j'enléve les marges blanches sur les cotés*/
     padding: 0 0px;
- }
-    /***1er header***/ 
+  }
+  /***1er header***/
   #header {
     flex-direction: column;
   }
@@ -558,7 +545,7 @@ footer {
   }
 
   #title-header {
-    column-gap: unset;  /*permet de définir la taille des espaces (gouttières) entre les colonnes unset=valeur initiale*/
+    column-gap: unset; /*permet de définir la taille des espaces (gouttières) entre les colonnes unset=valeur initiale*/
     width: 100%;
   }
 
@@ -573,47 +560,48 @@ footer {
   }
 
   .border-bottom {
-    border-bottom: 3px solid #F2F2F2;
+    border-bottom: 3px solid #f2f2f2;
     width: 50%;
     text-align: center;
     margin: 0px;
-}
+  }
 
   .searchSection {
     padding: 0 20px;
-}
-
-.searchHeader {
-  margin-top: 15px;
-  width: 80%;
-}
-
-#trouvez {
-  font-size: 16px;
-}
-
-#info-people {
-  margin-bottom: 0px;
-  display: flex;
-  align-items: center;
-  
-}
-
-.centre {
- font-size: 12px;
-}
-
-  .input-search {
-   flex: auto;
-   
   }
 
-.button-search {  /****Pour faire disparaître le boutton rechercher et faire apparaître la loupe à la place****/
+  .searchHeader {
+    margin-top: 15px;
+    width: 80%;
+  }
+
+  #find {
+    font-size: 16px;
+  }
+
+  #info-people {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .center {
+    font-size: 12px;
+  }
+
+  .input-search {
+    flex: auto;
+  }
+
+  .button-search {
+    /****Pour faire disparaître le boutton rechercher et faire apparaître la loupe à la place****/
     display: none;
   }
 
-  .loupe {            /****loupe****/
-    display: block;}
+  .loupe {
+    /****loupe****/
+    display: block;
+  }
 
   .fas.fa-search {
     display: flex;
@@ -624,135 +612,125 @@ footer {
   /***************Filtres***********/
 
   .searchFilters {
-
     gap: 20px;
   }
-    
+
   .filtres {
-    
     margin-left: 15px;
     margin-bottom: 0;
   }
 
   .fasfa {
-    
-    padding: unset;
     width: calc(50% - 10px);
-    font-size: 14px;
+    font-size: 8px;
     justify-content: center;
-}
+  }
 
-.fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fa-sharp.fa-solid.fa-fire {
- left: 32px;
-}
+  .fas.fa-money-bill-wave,
+  .fas.fa-child,
+  .fas.fa-heart,
+  .fa-sharp.fa-solid.fa-fire {
+    left: 32px;
+  }
 
-.eco,
-.familial,
-.romantique,
-.pepites{
+  .eco,
+  .familial,
+  .romantique,
+  .pepites {
+    font-size: 12px;
+    flex: auto;
+    /*padding-left: 35px;*/
+  }
 
-font-size: small;
-flex: auto;
+  .fas.fa-info {
+    margin-right: 15px;
+    display: inline-flex;
+  }
 
-/*padding-left: 35px;*/
-} 
+  .nombre {
+    width: 80%;
+    font-size: 12px;
+  }
 
-.fas.fa-info {
-  margin-right: 15px;
-  display: inline-flex;
-}
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+  }
 
-.nombre {
-  width: 80%;
-  font-size: 12px;
-}
+  .hebergements-and-populaires section {
+    margin-bottom: 30px;
+  }
 
+  #white-hebergement {
+    background-color: white;
+  }
 
-.hebergements-and-populaires {
-  flex-direction: column-reverse;
-}
+  .populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-.hebergements-and-populaires section {
-  margin-bottom: 30px;
-}
-
-#white-hebergement {
-  background-color: white;
-}
-
-.populaire {     
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.populaires-cards,   /***flex-direction column = met les éléments les uns en dessous des autres***/
+  .populaires-cards,   /***flex-direction column = met les éléments les uns en dessous des autres***/
  .row-location,
  .activity,
- .contenu-footer
-{
-  flex-direction: column;
-  width: 96%;
-}
+ .contenu-footer {
+    flex-direction: column;
+    width: 96%;
+  }
 
-/****dernier code***/
+  .populaires-cards .card {
+    width: 100%;
+  }
 
-.populaires-cards .card {
-  width: 100%;
-}
+  /*****Deuxiéme section hébergements à Marseille qui passe en dessous de l'aside en version mobile à l'aide de flex-direction column-reverse ligne 651*****/
 
+  .hosting {
+    width: 96%;
+  }
 
-/*.fas.fa-info { A supprimer
-  width: 5%;
-}*/
+  .hosting-img {
+    width: 100%;
+    height: 180px;
+  }
 
-.hosting {
-  width: 96%;
-}
+  .more {
+    padding: 0px;
+  }
 
-.more {
-padding: 0px;
-}
+  /******Quatriéme et derniére section, activites Marseille******/
 
-.hosting-img {
-  width: 100%;
-  height: 180px;
-}
+  .activites-marseille {
+    margin-top: 0px;
+    margin-left: 15px;
+  }
 
-.activites-marseille {
-  margin-top: 0px;
-  margin-left: 15px;
-}  
-    
-.activity {
-  width: 96%;
-  padding: 2%;
-}
+  .activity {
+    width: 96%;
+    padding: 2%;
+  }
 
-.bloc {
-  width: 96%;
-}
+  .bloc {
+    width: 96%;
+  }
 
-.port-pomegues-calanques-garde {
-  width: 95%;
-}
+  .port-pomegues-calanques-garde {
+    width: 95%;
+  }
 
-.les-quatre-img-activités-Marseille {
-  height: 180px;
-  width: 100%;
-}
+  .les-quatre-img-activités-Marseille {
+    height: 180px;
+    width: 100%;
+  }
 
-/***Footer***/
+  /***Footer***/
 
-footer {
- flex-direction: column;
-background-color: #F2F2F2;
-}
+  footer {
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
 
-.bloc-footer-info {
-  width: auto; /*width permet de définir la largeur de la boîte du contenu d'un élément, auto c'est la valeur par défaut de width*/
-}
-/*footer*/
-
-
+  .bloc-footer-info {
+    width: auto; /*width permet de définir la largeur de la boîte du contenu d'un élément, auto c'est la valeur par défaut de width*/
+  }
+  /*fin footer*/
 }
