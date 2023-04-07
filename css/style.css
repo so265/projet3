@@ -56,6 +56,10 @@ body {
   padding-top: 3%;
 }
 
+#border-topi[data-active="true"] {
+  border-top-color: #0065fc;
+}
+
 #black {
   color: black;
   padding-right: 30px;
