@@ -1,0 +1,72 @@
+/*Code fourni par OC*/
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) *//*************tablette***********/
+
+@media (max-width: 1024px) {
+
+    .hebergements-and-populaires {
+      flex-direction: column;
+    }
+  
+    .hebergements {
+      width: 100%;
+    }
+  
+    .populaires {
+      width: 100%;
+      margin-top: 50px;
+    }
+  
+    .populaires-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .populaires-cards .card {
+      width: 30%;
+    }
+  
+    .populaires-cards .card-title {
+      font-size: 14px;
+    }
+  
+    .populaires-cards {
+      font-size: 13px;
+    }
+    /***********Fin code OC***********/
+  
+    .searchFilters {
+      flex-wrap: wrap;
+    }
+  
+    .filtres {
+      width: 90%;
+    }
+  
+    .fasfa {
+      width: 25%;
+    }
+  
+    #info-people {
+      margin-bottom: 20px;
+    }
+  
+    .card-title {
+      font-size: 13px;
+  }
+  
+  .tarif1 {
+    font-size: 11.5px;
+  }
+  
+  .les-quatre-img-activités-Marseille {
+      height: 200px;
+    }
+  
+    .ancrebis2 {
+      font-size: 12px;
+      line-height: 1.9;
+    }
+}
