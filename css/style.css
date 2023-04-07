@@ -50,11 +50,10 @@ body {
 }
 
 #border-topi {
- color: #0065fc;
-}
-
-#border-topi[data-active="true"] {
-  border-top-color: #0065fc;
+  border-top: 3px solid;
+  color: #0065fc;
+  text-align: right;
+  padding-top: 3%;
 }
 
 #black {
@@ -85,7 +84,7 @@ header nav a {
   margin-top: 0;
 }
 
-/* Logo gps/input Marseille, France/button*/
+/*********************** 1ére section Logo gps/input Marseille, France/button****************************/
 
 .searchForm {
   display: flex; /****imput-search flex :1 en version mobile, prend toute la largeur****/
@@ -563,9 +562,13 @@ footer {
   }
 
   #border-topi {
-   
+    border-top: none;
     border-bottom: 3px solid #0065fc;
-    
+    padding-bottom: 10px;
+    width: 70%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 0px;
   }
 
   .border-bottom {

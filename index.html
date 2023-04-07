@@ -20,9 +20,8 @@
       <header id="header">
         <img id="logo-booki" src="images/logo/Booki.png" alt="logo de booki"/>
         <nav id="title-header">
-          <a href="#location" id="border-topi" class="border-top"data-active="true">Hébergements</a>   <!--Border-top = barre bleue sur le mot hébergements qui apparait au hover survol de la souris-->
-          
-          <a href="#Marseille-activity" id="black" class="border-bottom" data-active="true">Activités</a>
+          <a href="#location" id="border-topi">Hébergements</a>   <!--Border-topi = barre bleue sur le mot hébergements-->
+          <a href="#activites-marseille" id="black" class="border-bottom" data-active="true">Activités</a>
         </nav>
       </header>
       <!--Fin header-->
@@ -40,11 +39,11 @@
           <!--Fin 2éme header-->
 
           <!--Logo gps/input Marseille, France/button-->
-          <form class="searchForm" method="GET">  <!--class=searchForm = meme hauteur logo-->
+          <form class="searchForm" method="GET">  <!--class=searchForm = meme hauteur logo, méthode GET = pour envoyer au serveur 1 formulaire-->
             <i class="fas fa-map-marker-alt"></i>
             <input type="text" class="input-search" name="ville" placeholder="Marseille, France"/>
             <button class="button-search">Rechercher</button>  <!--button = bouton cliquable, rechercher disparait en version mobile avec display none-->
-            <button class="loupe"><i class="fas fa-search"></i></button> <!--Loupe qui apparait juste en version mobile-->
+            <button class="loupe"><i class="fas fa-search"></i></button> <!--LOUPE qui apparait juste en version mobile-->
           </form>
           <!--Search-filters-->
           <div class="searchFilters">
