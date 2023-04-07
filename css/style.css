@@ -566,13 +566,9 @@ footer {
   }
 
   #border-topi {
-    border-top: none;
+   
     border-bottom: 3px solid #0065fc;
-    padding-bottom: 10px;
-    width: 50%;
-    text-align: center;
-    margin: 0px;
-    padding-top: 0px;
+    
   }
 
   .border-bottom {
