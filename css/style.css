@@ -50,10 +50,7 @@ body {
 }
 
 #border-topi {
-  border-top: 3px solid;
-  color: #0065fc;
-  text-align: right;
-  padding-top: 3%;
+ color: #0065fc;
 }
 
 #border-topi[data-active="true"] {
