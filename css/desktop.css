@@ -154,7 +154,7 @@ header nav a {
   text-align: center;
 }
 
-/*search filters*/
+/***********************search filters********************/
 .searchFilters {
   display: flex;
   align-items: center; /*Aligne tout*/
@@ -307,7 +307,7 @@ header nav a {
   width: 65%;
 }
 
-/*Deuxiéme section hébergements à Marseille*/
+/******************************Deuxiéme section hébergements à Marseille*************************************/
 /* Trois premiéres images horizontales*/
 
 .row-location {
@@ -352,7 +352,7 @@ header nav a {
   display: block;
 }
 
-/****** Populaires 3éme section aside fourni par OC ***********/
+/************************** Populaires 3éme section aside fourni par OC ***************************/
 .populaires {
   width: 32%;
 }
@@ -398,7 +398,7 @@ header nav a {
 }
 /*Fin copde fourni par OC*/
 
-/*Quatriéme section et derniére section, activites Marseille*/
+/***************************Quatriéme section et derniére section, activites Marseille*****************************/
 /* Les quatre images horizontales ont une taille identique.*/
 .activites-marseille {
   margin-top: 35px;
@@ -440,7 +440,7 @@ header nav a {
   padding-left: 5%;
 }
 
-/***FOOTER***/
+/***********************************FOOTER*************************************/
 footer {
   display: flex;
   margin-top: 4%;
