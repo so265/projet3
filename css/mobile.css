@@ -24,22 +24,38 @@
       column-gap: unset; /*permet de définir la taille des espaces (gouttières) entre les colonnes unset=valeur initiale*/
       width: 100%;
     }
-  
-    #border-topi {
+    #blue {
       border-top: none;
-      border-bottom: 3px solid #0065fc;
+    }
+
+    .border-topi {
+      border-top: none;
+     /* border-bottom: 3px solid #0065fc;*/
       padding-bottom: 10px;
-      width: 70%;
+     width: 70%;
       text-align: center;
       margin: 0px;
       padding-top: 0px;
     }
+
+    #black {
+      border-top: none;
+    }
+
+    .border-topi:hover {
+     border-bottom: 3px solid #0065fc;
+     padding-bottom: 10px;
+    }
   
-    .border-bottom {
-      border-bottom: 3px solid #f2f2f2;
+    .border-topi[data-active="true"] {
+      border-top: none;
       width: 50%;
       text-align: center;
       margin: 0px;
+    }
+
+    .border-topi[data-active="true"]:hover {  /*Ainsi le trtait en dessous est gris et non pas bleu*/
+      border-bottom: 3px solid #f2f2f2;
     }
   
     .searchSection {
