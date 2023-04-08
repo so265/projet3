@@ -45,9 +45,7 @@ body {
 }
 
 #header nav a :hover {
-  
-  padding-top: 12px;
-  
+   padding-top: 12px;
 }
 
 #logo-booki {
@@ -88,7 +86,7 @@ header nav a {
   text-decoration: none; /*supprime les traits en dessous*/
 }
 
-/*1ére section*/
+/*********************************1ére section************************************/
 
 .searchHeader {
   /***voir si necessaire***/
@@ -105,7 +103,7 @@ header nav a {
   margin-top: 0;
 }
 
-/*********************** 1ére section Logo gps/input Marseille, France/button****************************/
+/***** 1ére section Logo gps/input Marseille, France/button*****/
 
 .searchForm {
   display: flex; /****imput-search flex :1 en version mobile, prend toute la largeur****/
