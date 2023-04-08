@@ -24,6 +24,7 @@
       column-gap: unset; /*permet de définir la taille des espaces (gouttières) entre les colonnes unset=valeur initiale*/
       width: 100%;
     }
+
     #blue {
       border-top: none;
     }
