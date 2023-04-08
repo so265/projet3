@@ -59,7 +59,7 @@ body {
 
 #blue:hover {
   color: #0065fc;
-  padding-top: 14px; 
+  
      /*permet à hébegements de ne plus sauter*/
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 #black:hover {
-  padding-top: 14px;  /*permet à activités de ne plus sauter*/
+   /*permet à activités de ne plus sauter*/
 }
 
 header nav a {
