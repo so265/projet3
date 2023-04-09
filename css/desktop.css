@@ -59,8 +59,8 @@ body {
 
 #blue:hover {
   color: #0065fc;
-  
-     /*permet à hébegements de ne plus sauter*/
+  padding-top: 14px; 
+ /*permet à hébegements de ne plus bouger*/
 }
 
 .border-topi:hover {
@@ -80,7 +80,7 @@ body {
 
 #black:hover {
    /*permet à activités de ne plus bouger*/
-  
+   padding-top: 14px; 
 }
 
 header nav a {
