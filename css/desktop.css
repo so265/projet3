@@ -45,7 +45,7 @@ body {
 }
 
 #header nav a :hover {
-  
+  padding-top: 12px;
 }
 
 #logo-booki {
