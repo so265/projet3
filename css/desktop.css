@@ -58,7 +58,11 @@ body {
   color: #0065fc;
 }
 
-
+#blue:hover {
+  color: #0065fc;
+  padding-top: 14px; 
+ /*permet à hébegements de ne plus bouger*/
+ }
 
 .border-topi:hover {
   border-top: 3px solid;
