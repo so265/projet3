@@ -55,15 +55,14 @@ body {
 }
 
 #blue {
-  color: #0065fc;
+  color: pink;
 }
 
 #blue:hover {
   color: #0065fc;
   padding-top: 14px; 
  /*permet à hébegements de ne plus bouger*/
- color: blueviolet;
-}
+ }
 
 .border-topi:hover {
   border-top: 3px solid;
@@ -75,7 +74,7 @@ body {
 }
 
 #black {
-  color: black;
+  color: fuchsia;
   padding-right: 30px;
   padding-left: 20px;
 }
@@ -83,7 +82,6 @@ body {
 #black:hover {
    /*permet à activités de ne plus bouger*/
    padding-top: 14px; 
-   color: blueviolet;
 }
 
 header nav a {
